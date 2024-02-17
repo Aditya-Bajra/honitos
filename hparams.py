@@ -13,7 +13,7 @@ def create_hparams(hparams_string=None, verbose=False):
         ################################
         # Experiment Parameters        #
         ################################
-        "epochs":1500,
+        "epochs":500,
         "iters_per_checkpoint":500,
         "seed":1234,
         "dynamic_loss_scaling":True,
@@ -68,7 +68,7 @@ def create_hparams(hparams_string=None, verbose=False):
         "decoder_rnn_dim":1024,
         "prenet_dim":256,
         "max_decoder_steps":1000,
-        "gate_threshold":0.5,
+        "gate_threshold":0.4,
         "p_attention_dropout":0.1,
         "p_decoder_dropout":0.1,
 
@@ -89,7 +89,7 @@ def create_hparams(hparams_string=None, verbose=False):
         # Optimization Hyperparameters #
         ################################
         "use_saved_learning_rate":True,
-        "learning_rate":1e-3,
+        "learning_rate":1e-4,
         "weight_decay":1e-6,
         "grad_clip_thresh":1.0,
         "batch_size":8, # each gpus
